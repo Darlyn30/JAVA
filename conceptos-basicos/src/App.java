@@ -35,6 +35,16 @@ public class App {
           }
           /*todo este trozo de codigo desde el line 29 es para ingresar datos por el usuario con la importacion del java scanner */
 
+          Scanner sc = new Scanner(System.in); // con esto pides un numero entero
+          System.out.println("1) [Calculadora]");
+          System.out.println("2) [Eventos]");
+          System.out.println("3) [Utiliarios]");
+          System.out.println("4) [Salir]");
+          int opt = sc.nextInt();
+          sc.close(); // con esto cierras el proceso del scanner
+          if(opt > 0){
+            System.out.println("hola");
+          }
         // hare un programa mas complejo que se encontrara en la carpeta projectoBasico
     }
 }

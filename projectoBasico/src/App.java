@@ -1,4 +1,4 @@
-import java.util.Scanner; // esto hay que importarlo para poder recibir datos por parte del usuario
+
 
 public class App {
     public static void main(String[] args) throws Exception {
