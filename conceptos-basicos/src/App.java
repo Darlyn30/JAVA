@@ -1,3 +1,4 @@
+import java.util.Scanner; // esto hay que importarlo para poder recibir datos por parte del usuario
 public class App {
     public static void main(String[] args) throws Exception {
         // estos son los conceptos basicos de java oracle
@@ -23,6 +24,16 @@ public class App {
         // while(num > 0){
         // } este while lo dejo vacio para que no se buguee
         // las variables y los tipos de datos se llaman igual que en c# 
+        System.out.flush(); // segun chat gpt esto funciona para limpiar la consola como un console clear,
+        // pero no reinicio, mas adelante sigo
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("Ingrese un texto: ");
+            String inputText = scanner.nextLine();
+            System.out.println("El texto ingresado es: " + inputText);
+          } catch (Exception e) {
+            System.out.println("Ha ocurrido un error: " + e.getMessage());
+          }
+          /*todo este trozo de codigo desde el line 29 es para ingresar datos por el usuario con la importacion del java scanner */
 
         // hare un programa mas complejo que se encontrara en la carpeta projectoBasico
     }

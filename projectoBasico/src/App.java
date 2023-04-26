@@ -10,15 +10,6 @@ public class App {
         // System.out.println("Ingrese el texto: ");
         // String text = Scanner.nextLine();
         // System.out.println("el texto dice: " + text);
-        System.out.flush(); // segun chat gpt esto funciona para limpiar la consola como un console clear,
-        // pero no reinicio, mas adelante sigo
-        try (Scanner scanner = new Scanner(System.in)) {
-            System.out.print("Ingrese un texto: ");
-            String inputText = scanner.nextLine();
-            System.out.println("El texto ingresado es: " + inputText);
-          } catch (Exception e) {
-            System.out.println("Ha ocurrido un error: " + e.getMessage());
-          }
-          /*todo este trozo de codigo desde el line 15 es para ingresar datos por el usuario con la importacion del java scanner */
+
     }
 }
